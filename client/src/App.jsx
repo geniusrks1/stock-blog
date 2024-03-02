@@ -6,26 +6,22 @@ import SignUp from './pages/SignUp'
 import Dashboard from './pages/Dashboard'
 import About from './pages/About'
 import Header from './components/Header'
+import Footer from './components/Footer'
+
 
 export default function App() {
   return (
    <BrowserRouter>
    <Header/>
     <Routes>
-
-   
-  <Route  path='/' element={<Home/>} />
+      <Route  path='/' element={<Home/>} />
   <Route path='signin' element={<SignIn/>}/>
   <Route  path='signup' element={<SignUp/>} />
   <Route path='dashboard' element={<Dashboard/>}/>
   <Route path='about' element={<About/>}/>
 
-
-<Route/>
-
-
-
-    </Routes>   
+    </Routes>  
+   <Footer/>
    </BrowserRouter>
   )
 }
